@@ -1,10 +1,8 @@
-# DOM-FLAT: DOM Flattening and Reconstruction Kit
+# domflat: DOM Flattening and Reconstruction Kit
 
 ## Overview
 
-This repository provides a specialized toolset, **DOM-FLAT**, for converting an HTML Document Object Model (DOM) structure into a flattened, data-centric CSV format and rebuilding the original HTML from that CSV. This is highly useful for generating **labeled data for machine learning models** that require structured context and content of web pages.
-
-The process uses **Depth-First Search (DFS)** for consistent ordering and employs the **`{idXXX}`** format to explicitly link parent and child elements within the flat CSV structure.
+This repository provides a specialized toolset, domflat, for converting an HTML Document Object Model (DOM) structure into a flattened, data-centric CSV format and rebuilding the original HTML from that CSV. 
 
 ## Requirements
 
@@ -40,7 +38,7 @@ Rebuilds the original HTML document from the structured CSV data by resolving th
 
 ## Usage Example
 
-### Step 1: Flatten DOM to CSV
+### Flatten DOM to CSV
 
 Assuming you have `input.html`:
 
@@ -48,7 +46,7 @@ Assuming you have `input.html`:
 python html2csv.py sample_data/input.html sample_data/output.csv
 ```
 
-### Step 2: Reconstruct HTML from CSV
+### Reconstruct HTML from CSV
 
 ```bash
 python csv2html.py sample_data/output.csv sample_data/reconstructed.html
