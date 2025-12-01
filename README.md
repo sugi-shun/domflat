@@ -1,4 +1,4 @@
-# domflat: DOM Flattening and Reconstruction Kit
+# domflat
 
 ## Overview
 
