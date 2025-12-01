@@ -1,7 +1,5 @@
 # domflat
 
-## Overview
-
 This repository provides a specialized toolset, domflat, for converting an HTML Document Object Model (DOM) structure into a flattened, data-centric CSV format and rebuilding the original HTML from that CSV. 
 
 ## Requirements
